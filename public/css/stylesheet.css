@@ -1,0 +1,206 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+    
+    .mySlides {
+        display: none
+    }
+    
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+    }
+    
+    .img-slider {
+        width: 1300px;
+        height: 900px;
+    }
+    
+    .prev,
+    .next1 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 52px;
+        padding: 11px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 1px 3px 0;
+        user-select: none;
+        border: rgb(255, 255, 255) 3px solid;
+        border-radius: 100%;
+    }
+    
+    .checked {
+        color: orange;
+    }
+    
+    .next1 {
+        right: 6%;
+    }
+    
+    .prev {
+        left: 6%;
+    }
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active1,
+    .dot:hover {
+        background-color: #717171;
+    }
+    
+    .fade1 {
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+    
+    #view-image-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        right: -25%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        opacity: 0;
+        transition: opacity 0.25s;
+        width: 267px;
+        height: 69%;
+        background-color: #0000002d
+    }
+    
+    #view-image-icon:hover {
+        opacity: 1;
+    }
+    
+    #item-shape-hover {
+        border: #949494 1px solid;
+        padding: 13px 0 12px 0;
+        border-radius: 100%;
+        height: 43px;
+        width: 48px;
+    }
+    
+    #item-shape2-hover {
+        border: #b41bb1 1px solid;
+        padding: 13px 0 12px 0;
+        border-radius: 100%;
+        height: 43px;
+        width: 48px;
+    }
+    
+    #item-shape-hover:hover {
+        border: #b41bb1 1px solid;
+    }
+    
+    #inside-item-shape-hover {
+        color: #949494;
+        padding: 10px;
+    }
+    
+    #inside-item-shape2-hover {
+        color: #b41bb1;
+        padding: 10px;
+    }
+    
+    #inside-item-shape-hover:hover {
+        color: #b41bb1;
+    }
+    
+    #subscribee:hover {
+        background-color: #ca5ec8;
+    }
+    
+    #subscribee {
+        background-color: #b41bb1;
+        color: white;
+        width: 220px;
+        margin-top: 30px
+    }
+    
+    #nav-text-item {
+        margin-left: 30px;
+        font-size: 18px
+    }
+    
+    #nav-text-item:hover {
+        background-color: #b41bb1;
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @media only screen and (max-width: 300px) {
+        .prev,
+        .next1,
+        .text {
+            font-size: 11px
+        }
+    }
+    
+    .notification {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        border-radius: 2px;
+    }
+    
+    .notification .badge {
+        position: absolute;
+        top: -1px;
+        right: 38px;
+        padding: 4px;
+        border-radius: 50%;
+        background: red;
+        color: white;
+    }
